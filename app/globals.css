@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@layer components {
+  .jb {
+    @apply flex justify-between items-center;
+  }
+
+  .fi,
+  .fc {
+    @apply flex items-center;
+  }
+
+  .cc {
+    @apply flex justify-center items-center;
+  }
+}
+
+.slick-slider .slick-list {
+  height: 250px !important;
+}
+
+.filter-blur {
+  filter: blur(4px);
+}
